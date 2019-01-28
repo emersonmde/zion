@@ -1,12 +1,12 @@
 ## Synopsis
 
-A Go API  for Matrix.org Client-Server API.
+A Go API for Matrix Chat Client-Server API.
 
 ## Details
 
 There are a few really good full featured Go Matrix API's (like those found in GO-NEB). However, I
-wanted to create a very slim and simple API implementation mostly for creation of simple bots. So
-far it's not much, but I hope to add connecting/disconnecting, joining rooms, receiving messages,
+wanted to create a very slim and simple API implementation mostly for the creation of simple chat bots. So 
+far it's not much, but I hope to add features for connecting/disconnecting, joining rooms, receiving messages,
 and sending messages.
 
 Currently each API call will be using an ACCESS_TOKEN (which you can easily get from Riot). Perhaps
