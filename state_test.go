@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestState(t *testing.T) {
+func TestDecodeState(t *testing.T) {
 	s := `{
 		"account_data":{
 			"events":[]
