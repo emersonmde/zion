@@ -1,7 +1,6 @@
 package zion
 
 import (
-	"log"
 	"strings"
 	"testing"
 )
@@ -67,7 +66,7 @@ func TestState(t *testing.T) {
 	}`
 	res, err := DecodeState(strings.NewReader(s))
 	if err != nil {
-		log.Fatal(err)
+		t.Fatalf("unable to decode json: %s", err)
 	}
 	if res.NextBatch != "NEXTBATCHVALUE" {
 		t.Fatalf("res.NextBatch expected NEXTBATCHVALUE got: %s", res.NextBatch)
